@@ -2,135 +2,272 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mohan Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mohan Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="site-main-wrapper">
-        <button class="hamberger">
-            <img src="./images/hamberger.svg" alt="">
-        </button>
+  <div class="site-main-wrapper">
+    <button class="hamberger">
+      <img src="./images/hamberger.svg" alt="">
+    </button>
 
-        <div class="mobile-nav">
-            <button class="times"><img src="./images/times.svg" alt=""></button>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
+    <div class="mobile-nav">
+      <button class="times"><img src="./images/times.svg" alt=""></button>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <header>
+      <div class="container">
+        <nav id="main-nav" class="flex items-center justify-between">
+          <div class="left flex items-center">
+            <!-- <div class="branding">
+              <img src="./images/logo.svg" alt="">
+            </div> -->
+            <div>
+              <a href="#">Home</a>
+              <a href="#about">About</a>
+              <a href="#blog">Projects</a>
+              <a href="#work">Journey</a>
+              <a href="#services">Services</a>
+            </div>
+          </div>
+          <div class="right">
+            <button class="btn btn-primary">Contact</button>
+          </div>
+        </nav>
+        <div class="hero flex items-center justify-between">
+          <div class="left flex-1 flex justify-center">
+            <img src="./images/man.png" alt="">
+          </div>
+          <div class="right flex-1">
+            <h6>Mohan Kancherla</h6>
+            <h1>I’m a Software <span>Engineer</span></h1>
+            <p>Bringing software to life with every click, making technology your friend, one line at a time </br> &lt/&gt</p>
+            <div class="heroA">
+              <a href="https://drive.google.com/file/d/1Ny44OQuZbuUMnbXzHoExG_am7_OvzhgI/view?usp=sharing" class="btn btn-secondary">DOWNLOAD CV</a>
+            </div>
+          </div>
         </div>
-        <header>
-            <div class="container">
-                <nav id="main-nav" class="flex items-center justify-between">
-                    <div class="left flex items-center">
-                        <div class="branding">
-                            <img src="./images/logo.svg" alt="">
-                        </div>
-                        <div>
-                            <a href="#">Home</a>
-                            <a href="#about">About</a>
-                            <a href="#projects">Projects</a>
-                            <a href="#work">Work</a>
-                            <a href="#blog">Blog</a>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <button class="btn btn-primary">Contact</button>
-                    </div>
-                </nav>
-                <div class="hero flex items-center justify-between">
-                    <div class="left flex-1 flex justify-center">
-                        <img src="./images/man.png" alt="">
-                    </div>
-                    <div class="right flex-1">
-                        <h6>Mohan Kancherla</h6>
-                        <h1>I’m a Software <span>Engineer</span></h1>
-                        <p>Bringing software to life with every click, making technology your friend, one line at a time &lt/&gt</p>
-                        <div>
-                            <button class="btn btn-secondary">DOWNLOAD CV</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+      </div>
+    </header>
 
-        <section id="about" class="about">
-            <div class="container flex items-center about-inner-wrap">
-                <div class="flex-1">
-                    <img class="about-me-img" src="./images/man-2.png" alt="">
-                </div>
-                <div class="flex-1 right">
-                    <h1>About <span>Me</span></h1>
-                    <h3>Hello! i’m Mohan kancherla.</h3>
-                    <p>Hey there, I'm Mohan Kancherla, and I'm all about making technology work for people. I studied Electronics and Communication Engineering and have turned my passion for tech into a career. Right now, I'm part of the NatWest Group team, where I'm focused on creating AI chatbots that make banking a breeze. Along the way, I've honed my skills as a React JS Intern and dabbled in the world of machine learning. I love tinkering with websites and data, and I'm comfortable with a bunch of programming languages. Beyond the tech stuff, I'm a sustainability enthusiast, and I'm on a mission to reduce waste and make the world a bit greener. Let's connect and chat about how I can bring that personal touch to technology</p>
-                    <div class="social">
-                        <a href="#"><img src="./images/website.svg" alt=""></a>
-                        <a href="https://www.facebook.com/codersgyan"><img src="./images/facebook.svg" alt=""></a>
-                        <a href="https://twitter.com/mohan04746807"> <img src="./images/twitter.svg" alt=""></a>
-                        <a href="https://github.com/Ganeshmohank"> <img src="./images/github.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="services" class="services">
-            <div class="container">
-                <h1 class="section-heading"><span>Services </span> offered</h1>
-                <p>Providing high standar clean website for your business solutions</p>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="./images/devops.svg" alt="">
-                        <h2>DEVOPS</h2>
-                    </div>
-                    <div class="card">
-                        <img src="./images/webdev.svg" alt="">
-                        <h2>WEB DEVELOPMENT</h2>
-                    </div>
-                    <div class="card">
-                        <img src="./images/cloud.svg" alt="">
-                        <h2>CLOUD COMPUTING</h2>
-                    </div>
-                    <div class="card">
-                        <img src="./images/appdev.svg" alt="">
-                        <h2>APP DEVELOPMENT</h2>
-                    </div>
-                    <div class="card">
-                        <img src="./images/software.svg" alt="">
-                        <h2>SOFTWARE DEVELOPMENT</h2>
-                    </div>
-                    <div class="card">
-                        <img src="./images/ml.svg" alt="">
-                        <h2>AI & ML MODELS</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="freelancer">
-            <h1>I Am Available For Freelancer.</h1>
-            <p>I am looking for opportunities in
+    <section id="about" class="about">
+      <div class="container flex items-center about-inner-wrap">
+        <div class="flex-1">
+          <img class="about-me-img" src="./images/man-2.png" alt="">
+        </div>
+        <div class="flex-1 right">
+          <h1>About <span>Me</span></h1>
+          <h3>Hello! i’m Mohan kancherla.</h3>
+          <p>Hey there, I'm Mohan Kancherla, and I'm all about making technology work for people. I studied Electronics and Communication Engineering and have turned my passion for tech into a career. Right now, I'm part of the NatWest Group team, where I'm focused on creating AI chatbots that make banking a breeze. Along the way, I've honed my skills as a React JS Intern and dabbled in the world
+            of machine learning. I love tinkering with websites and data, and I'm comfortable with a bunch of programming languages. Beyond the tech stuff, I'm a sustainability enthusiast, and I'm on a mission to reduce waste and make the world a bit greener. Let's connect and chat about how I can bring that personal touch to technology</p>
+          <div class="social">
+            <a href="#"><img src="./images/website.svg" alt=""></a>
+            <a href="https://www.facebook.com/codersgyan"><img src="./images/facebook.svg" alt=""></a>
+            <a href="https://twitter.com/mohan04746807"> <img src="./images/twitter.svg" alt=""></a>
+            <a href="https://github.com/Ganeshmohank"> <img src="./images/github.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work">
+      <div class="container">
+        <h1 class="section-heading"><span>My</span> Journey</h1>
+
+        <div class="timeline">
+          <ul>
+            <li>
+              <div class="content">
+                <h3>Living Our Values(LOV), Curious award</h3>
+                <p>For the significant contributions made at NatWest Group and the youngest to receive an LOV </p>
+              </div>
+              <div class="time">
+                <h4>June 2023</h4>
+              </div>
+            </li>
+
+            <li>
+              <div class="content">
+                <h3>Got my first offer at Natwest Group PLC</h3>
+                <p> Software Enginner, working as a frontend developer and messaging gateways expert on an AI chatbot project that answers banking
+                  questions.
                 </p>
-                <p>•Software Development &emsp; •Software Engineering &emsp; •Web Development</p>
-            <button class="btn btn-primary">Download CV</button>
-        </section>
-        <section class="reviews">
-            <div class="container">
-                <h1 class="section-heading"><span>My </span> Works</h1>
-                <p>Providing high standard solutions and clean website for business</p>
-                <div class="slider">
-                    <div class="slide">
-                        <img src="./images/vidrona.png" alt="">
-                        <p>Developed dashboards and visualizations that provide clear insights into system performance using ReactJS</p>
-                        <span>- Shailendra, CTO</span>
-                    </div>
-                    <!-- <div class="slide">
+              </div>
+              <div class="time">
+                <h4>Sep 20 2021, 23:11</h4>
+              </div>
+            </li>
+
+            <li>
+              <div class="content">
+                <h3>Published first Research </h3>
+                <p>"Sentiment Perception in Articulation" at International Journal for Research in Applied Science
+                  and Engineering Technology, Volume 9, Issue VII, July 2021</p>
+              </div>
+              <div class="time">
+                <h4>July 2021</h4>
+              </div>
+            </li>
+
+            <li>
+              <div class="content">
+                <h3>Founder, President</h3>
+                <p>Established a student club at VIT University that now has over 400 members and is dedicated to promoting zero
+                  waste in our current livelihood</p>
+              </div>
+              <div class="time">
+                <h4>February 2021</h4>
+              </div>
+            </li>
+
+            <li>
+              <div class="content">
+                <h3>Machine Learning Intern at Verzeo</h3>
+                <p>Worked on large datasets, primarily worked on a model and improved the efficency by 8% </p>
+              </div>
+              <div class="time">
+                <h4>November 2020</h4>
+              </div>
+            </li>
+
+            <li>
+              <div class="content">
+                <h3>React JS Intern at Vidrona</h3>
+                <p> Developed dashboards and visualizations, built messaging platform facilitating seamless interaction and alert systems using firebase</p>
+              </div>
+              <div class="time">
+                <h4>September 2020</h4>
+              </div>
+            </li>
+
+            <li>
+              <div class="content">
+                <h3>First Internship</h3>
+                <p>Gained a prior knowledge of gates and worked with gates role in the machinery and how heavy machinery works with minimal error output </p>
+              </div>
+              <div class="time">
+                <h4>May 2020</h4>
+              </div>
+            </li>
+
+            <li>
+              <div class="content">
+                <h3>First project</h3>
+                <p>Developed an HELP DESK platform where users can register their complaints and can be solved by the customer care</p>
+              </div>
+              <div class="time">
+                <h4>August 2019</h4>
+              </div>
+            </li>
+
+            <li>
+              <div class="content">
+                <h3>Competetive coding</h3>
+                <p>The thrilling journey of competitive coding. As I navigate through algorithms and unravel complex problems, I just didnot write code, I started crafting solutions. The coding adventures unfold</p>
+              </div>
+              <div class="time">
+                <h4>May 2019</h4>
+              </div>
+            </li>
+
+            <li>
+              <div class="content">
+                <h3>IEE SPS core commitee member</h3>
+                <p>Worked as a technical analyst in the students chapter</p>
+              </div>
+              <div class="time">
+                <h4>March 2019</h4>
+              </div>
+            </li>
+
+            <li>
+              <div class="content">
+                <h3> &lt/&gt</h3>
+                <p>Coded my first Hellowe world program</p>
+              </div>
+              <div class="time">
+                <h4>November 2018</h4>
+              </div>
+            </li>
+
+            <li>
+              <div class="content">
+                <h3>Joined VIT as Undergraduate</h3>
+                <p>Hey, it's time diving into the world of Electronics and Communication Engineering at VIT! Ready to explore the circuits of knowledge and amplify my passion for innovation. Let the learning journey begin</p>
+              </div>
+              <div class="time">
+                <h4>July 2018</h4>
+              </div>
+            </li>
+            <div style="clear:both;"></div>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h1 class="section-heading"><span>Services </span> offered</h1>
+        <p>Providing high standar clean website for your business solutions</p>
+        <div class="card-wrapper">
+          <div class="card">
+            <img src="./images/devops.svg" alt="">
+            <h2>DEVOPS</h2>
+          </div>
+          <div class="card">
+            <img src="./images/webdev.svg" alt="">
+            <h2>WEB DEVELOPMENT</h2>
+          </div>
+          <div class="card">
+            <img src="./images/cloud.svg" alt="">
+            <h2>CLOUD COMPUTING</h2>
+          </div>
+          <div class="card">
+            <img src="./images/appdev.svg" alt="">
+            <h2>APP DEVELOPMENT</h2>
+          </div>
+          <div class="card">
+            <img src="./images/software.svg" alt="">
+            <h2>SOFTWARE DEVELOPMENT</h2>
+          </div>
+          <div class="card">
+            <img src="./images/ml.svg" alt="">
+            <h2>AI & ML MODELS</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="freelancer">
+      <h1>I Am Available For Freelancer.</h1>
+      <p>I am looking for opportunities in
+      </p>
+      <p>•Software Development &emsp; •Software Engineering &emsp; •Web Development</p>
+      <button class="btn btn-primary">Download CV</button>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <h1 class="section-heading"><span>My </span> Works</h1>
+        <p>Providing high standard solutions and clean website for business</p>
+        <div class="slider">
+          <div class="slide">
+            <img src="./images/vidrona.png" alt="">
+            <p>Developed dashboards and visualizations that provide clear insights into system performance using ReactJS</p>
+            <span>- Shailendra, CTO</span>
+          </div>
+          <!-- <div class="slide">
                         <img src="./images/lady.png" alt="">
                         <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
@@ -151,256 +288,126 @@
                             mollit anim id est laborum"</p>
                         <span>- John Doel, Company ABC</span>
                     </div> -->
-                </div>
-                <div class="slider-dots"></div>
+        </div>
+        <div class="slider-dots"></div>
+      </div>
+    </section>
+
+
+
+    <section id="blog" class="blog">
+      <div class="container">
+        <h1 class="section-heading"><span>My</span> Projects</h1>
+        <p>We provide high standar clean website for your business solutions</p>
+
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./images/ecom.png" alt="">
             </div>
-        </section>
-
-        <section id="work" class="work">
-            <div class="container">
-                <h1 class="section-heading"><span>My</span> Journey</h1>
-                
-                <div class="timeline">
-                    <ul>
-                      <li>
-                        <div class="content">
-                          <h3>Living Our Values(LOV), Curious award</h3>
-                          <p>For the significant contributions made at NatWest Group and the youngest to receive an LOV </p>
-                        </div>
-                        <div class="time">
-                          <h4>June 2023</h4>
-                        </div>
-                      </li>
-                      
-                      <li>
-                        <div class="content">
-                          <h3>Got my first offer at Natwest Group PLC</h3>
-                          <p> Software Enginner, working as a frontend developer and messaging gateways expert on an AI chatbot project that answers banking
-                            questions.
-                            </p>
-                        </div>
-                        <div class="time">
-                          <h4>Sep 20 2021, 23:11</h4>
-                        </div>
-                      </li>
-                      
-                      <li>
-                        <div class="content">
-                          <h3>Published first Research </h3>
-                          <p>"Sentiment Perception in Articulation" at International Journal for Research in Applied Science
-                            and Engineering Technology, Volume 9, Issue VII, July 2021</p>
-                        </div>
-                        <div class="time">
-                          <h4>July 2021</h4>
-                        </div>
-                      </li>
-                      
-                      <li>
-                        <div class="content">
-                          <h3>Founder, President</h3>
-                          <p>Established a student club at VIT University that now has over 400 members and is dedicated to promoting zero
-                            waste in our current livelihood</p>
-                        </div>
-                        <div class="time">
-                          <h4>February 2021</h4>
-                        </div>
-                      </li>
-                                            
-                      <li>
-                        <div class="content">
-                          <h3>Machine Learning Intern at Verzeo</h3>
-                          <p>Worked on large datasets, primarily worked on a model and improved the efficency by 8% </p>
-                        </div>
-                        <div class="time">
-                          <h4>November 2020</h4>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div class="content">
-                          <h3>React JS Intern at Vidrona</h3>
-                          <p> Developed dashboards and visualizations, built messaging platform facilitating seamless interaction and alert systems using firebase</p>
-                        </div>
-                        <div class="time">
-                          <h4>September 2020</h4>
-                        </div>
-                      </li>
-                      
-                      <li>
-                        <div class="content">
-                          <h3>First Internship</h3>
-                          <p>Gained a prior knowledge of gates and worked with gates role in the machinery and how heavy machinery works with minimal error output </p>
-                        </div>
-                        <div class="time">
-                          <h4>May 2020</h4>
-                        </div>
-                      </li>
-                      
-                      <li>
-                        <div class="content">
-                          <h3>First project</h3>
-                          <p>Developed an HELP DESK platform where users can register their complaints and can be solved by the customer care</p>
-                        </div>
-                        <div class="time">
-                          <h4>August 2019</h4>
-                        </div>
-                      </li>
-                      
-                      <li>
-                        <div class="content">
-                          <h3>Competetive coding</h3>
-                          <p>The thrilling journey of competitive coding. As I navigate through algorithms and unravel complex problems, I just didnot write code, I started crafting solutions. The coding adventures unfold</p>
-                        </div>
-                        <div class="time">
-                          <h4>May 2019</h4>
-                        </div>
-                      </li>
-                      
-                      <li>
-                        <div class="content">
-                          <h3>IEE SPS core commitee member</h3>
-                          <p>Worked as a technical analyst in the students chapter</p>
-                        </div>
-                        <div class="time">
-                          <h4>March 2019</h4>
-                        </div>
-                      </li>
-                      
-                      <li>
-                        <div class="content">
-                          <h3> &lt/&gt</h3>
-                          <p>Coded my first Hellowe world program</p>
-                        </div>
-                        <div class="time">
-                          <h4>November 2018</h4>
-                        </div>
-                      </li>
-                      
-                      <li>
-                        <div class="content">
-                          <h3>Joined VIT as Undergraduate</h3>
-                          <p>Hey, it's time diving into the world of Electronics and Communication Engineering at VIT! Ready to explore the circuits of knowledge and amplify my passion for innovation. Let the learning journey begin</p>
-                        </div>
-                        <div class="time">
-                          <h4>July 2018</h4>
-                        </div>
-                      </li>
-                      <div style="clear:both;"></div>
-                    </ul>
-                  </div>
+            <div class="card-content">
+              <a href="https://github.com/Ganeshmohank/ecommerce">
+                <h1>E-commerce website</h1>
+              </a>
+              <span>May 12, 2020</span>
+              <p>Built an e-commerce website using React and Spring for selling perfumes.
+                <br> Developed the back-end of the perfume store using the Spring framework
+                <br>Employed JPA for efficient database management and data retrieval and used PostgreSQL database to store data.
+                <br> Established user authentication , employing tokenizations for secure user sessions and integrated authentication with
+                Google.
+                <br>Integrated payment gateway for making purchases with PayPal
+              </p>
+              <a href="https://github.com/Ganeshmohank/ecommerce">Read More</a>
             </div>
-        </section>
-
-        <section id="blog" class="blog">
-            <div class="container">
-                <h1 class="section-heading"><span>My</span> Projects</h1>
-                <p>We provide high standar clean website for your business solutions</p>
-
-                <div class="card-wrapper">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./images/ecom.png" alt="">
-                        </div>
-                        <div class="card-content">
-                            <a href="https://github.com/Ganeshmohank/ecommerce">
-                                <h1>E-commerce website</h1>
-                            </a>
-                            <span>May 12, 2020</span>
-                            <p>Built an e-commerce website using React and Spring for selling perfumes.
-                                <br> Developed the back-end of the perfume store using the Spring framework
-                                <br>Employed JPA for efficient database management and data retrieval and used PostgreSQL database to store data.
-                                <br> Established user authentication , employing tokenizations for secure user sessions and integrated authentication with
-                                Google.
-                                <br>Integrated payment gateway for making purchases with PayPal</p>
-                            <a href="https://github.com/Ganeshmohank/ecommerce">Read More</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./images/employee.jpg" alt="">
-                        </div>
-                        <div class="card-content">
-                            <a href="https://github.com/Ganeshmohank/EmployeeManagementSystemWithAngularAndSpringBoot">
-                                <h1>Employee Management System</h1>
-                            </a>
-                            <span>Jul 22, 2020</span>
-                            <p>Utilised Angular, to create user-friendly dashboards for administrators, managers, and employees, allowing them to
-                                to manage various HR tasks efficiently.
-                                <br> Developed the backend using Spring framework for data retrieval , manipulations and embedded user authentication
-                                and authorization features to protect sensitive employee data.
-                                <br> Integrated RESTful APIs, utilized databases (MYSQL), and implemented search and filter functionalities</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./images/antenas.png" alt="">
-                        </div>
-                        <div class="card-content">
-                            <a href="#">
-                                <h1>Adaptive Beam-forming Using Deep Learning for Wireless Communication</h1>
-                            </a>
-                            <span>Feb 02, 2022</span>
-                            <p>Developed a new method that behaves like an adaptive beam-forming algorithm using a deep learning model,
-                                LSTM.
-                                <br>The LSTM model is able to form narrower beams by neglecting interference signals with fast convergence</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./images/employee.jpg" alt="">
             </div>
-        </section>
-        <section class="contact">
-            <div class="container">
-                <h1 class="section-heading">Contact <span>Us</span></h1>
-                <p>We provide high standar clean website for your business solutions</p>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="./images/call.svg" alt="">
-                        <h1>Call Me On</h1>
-                        <h6>+91 9381123567</h6>
-                    </div>
-                    <div class="card">
-                        <img src="./images/email.svg" alt="">
-                        <h1>Email Me At</h1>
-                        <h6>mohankncherla519@gmail.com</h6>
-                    </div>
-                </div>
-
-                <form action="">
-                    <div class="input-wrap">
-                        <input type="text" placeholder="Your Name *">
-                        <input type="email" placeholder="Your Email *">
-                    </div>
-                    <div class="input-wrap-2">
-                        <input type="text" placeholder="Your Subject...">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..."></textarea>
-                    </div>
-                    <div class="btn-wrapper">
-                        <button class="btn btn-primary">Send Message</button>
-                    </div>
-                </form>
+            <div class="card-content">
+              <a href="https://github.com/Ganeshmohank/EmployeeManagementSystemWithAngularAndSpringBoot">
+                <h1>Employee Management System</h1>
+              </a>
+              <span>Jul 22, 2020</span>
+              <p>Utilised Angular, to create user-friendly dashboards for administrators, managers, and employees, allowing them to
+                to manage various HR tasks efficiently.
+                <br> Developed the backend using Spring framework for data retrieval , manipulations and embedded user authentication
+                and authorization features to protect sensitive employee data.
+                <br> Integrated RESTful APIs, utilized databases (MYSQL), and implemented search and filter functionalities
+              </p>
+              <a href="#">Read More</a>
             </div>
-        </section>
-        <footer>
-            <!-- <img class="footer-logo" src="./images/logo-2.svg" alt=""> -->
-            <div class="footer-socials">
-                <!-- <a href="#"><img src="./images/website.svg" alt=""></a>
+          </div>
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./images/antenas.png" alt="">
+            </div>
+            <div class="card-content">
+              <a href="#">
+                <h1>Adaptive Beam-forming Using Deep Learning for Wireless Communication</h1>
+              </a>
+              <span>Feb 02, 2022</span>
+              <p>Developed a new method that behaves like an adaptive beam-forming algorithm using a deep learning model,
+                LSTM.
+                <br>The LSTM model is able to form narrower beams by neglecting interference signals with fast convergence
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <h1 class="section-heading">Contact <span>Us</span></h1>
+        <p>We provide high standar clean website for your business solutions</p>
+        <div class="card-wrapper">
+          <div class="card">
+            <img src="./images/call.svg" alt="">
+            <h1>Call Me On</h1>
+            <h6>+91 9381123567</h6>
+          </div>
+          <div class="card">
+            <img src="./images/email.svg" alt="">
+            <h1>Email Me At</h1>
+            <h6>mohankncherla519@gmail.com</h6>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="input-wrap">
+            <input type="text" placeholder="Your Name *">
+            <input type="email" placeholder="Your Email *">
+          </div>
+          <div class="input-wrap-2">
+            <input type="text" placeholder="Your Subject...">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..."></textarea>
+          </div>
+          <div class="btn-wrapper">
+            <button class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <!-- <img class="footer-logo" src="./images/logo-2.svg" alt=""> -->
+      <div class="footer-socials">
+        <!-- <a href="#"><img src="./images/website.svg" alt=""></a>
                 <a href="https://www.facebook.com/codersgyan"><img src="./images/facebook.svg" alt=""></a>
                 <a href="https://twitter.com/CoderGyan"> <img src="./images/twitter.svg" alt=""></a>
                 <a href="#"> <img src="./images/pintrest.svg" alt=""></a>
                 <a href="https://www.instagram.com/codersgyan/"> <img src="./images/instagram.svg" alt=""></a> -->
-            </div>
-            <!-- <div class="copyright">
+      </div>
+      <!-- <div class="copyright">
                 Copyright 2020 © Coder's Gyan
             </div> -->
-        </footer>
-    </div>
+    </footer>
+  </div>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./js/app.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>

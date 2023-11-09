@@ -105,6 +105,9 @@ header nav .branding{
 .hero .right {
     margin-top:-7rem;
 }
+a{
+    text-decoration: none;
+}
 
 section{
     padding:6rem 0;
@@ -191,7 +194,7 @@ section.services .card-wrapper .card{
     background:var(--pure);
     padding: 3rem 2rem;
     position:relative;
-    padding-top:5rem;
+    padding-top:8rem;
     text-align: center;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
@@ -202,7 +205,7 @@ section.services .card-wrapper .card{
 }
 section.services .card-wrapper .card img{
     position: absolute;
-    top:0.4rem;
+    top:1.5rem;
     left:50%;
     width:20%;
     transform: translateX(-50%);
