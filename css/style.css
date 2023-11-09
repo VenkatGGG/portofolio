@@ -408,6 +408,8 @@ section.contact .card-wrapper .card{
 }
 section.contact .card-wrapper .card img{
     margin-bottom: 3rem;
+    width:25%;
+    height:25%;
 }
 section.contact .card-wrapper .card h1{
     font-weight:400;
@@ -596,9 +598,9 @@ h1{
   height:10px;
   top:24px;
   right:-6px;
-  background:rgba(233,33,99,1);
+  background:#3DCFD3;
   border-radius:50%;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.2);
+  box-shadow:0 0 0 3px rgba(61, 207, 211, 0.2);
 }
 .timeline ul li:nth-child(even):before
 {
@@ -608,14 +610,14 @@ h1{
   height:10px;
   top:24px;
   left:-4px;
-  background:rgba(233,33,99,1);
+  background:#3DCFD3;
   border-radius:50%;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.2);
+  box-shadow:0 0 0 3px rgba(61, 207, 211, 0.2);
 }
 .timeline ul li h3{
   padding:0;
   margin:0;
-  color:rgba(233,33,99,1);
+  color:#3DCFD3;
   font-weight:600;
 }
 .timeline ul li p{
@@ -634,10 +636,10 @@ h1{
   right:-165px;
   margin:0;
   padding:8px 16px;
-  background:rgba(233,33,99,1);
+  background:#3DCFD3;
   color:#fff;
   border-radius:18px;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.3);
+  box-shadow:0 0 0 3px rgba(61, 207, 211, 0.3);
 }
 .timeline ul li:nth-child(even) .time
 {
@@ -646,10 +648,10 @@ h1{
   left:-165px;
   margin:0;
   padding:8px 16px;
-  background:rgba(233,33,99,1);
+  background:#3DCFD3;
   color:#fff;
   border-radius:18px;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.3);
+  box-shadow:0 0 0 3px rgba(61, 207, 211, 0.3);
 }
 @media(max-width:1000px)
 {
