@@ -100,9 +100,9 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+              <p class="contact-title">Degree</p>
 
-              <time datetime="1982-06-23">5 August, 2001</time>
+              <time datetime="1982-06-23">Masters</time>
             </div>
 
           </li>
@@ -476,7 +476,7 @@
           <ul class="clients-list has-scrollbar">
 
             <li class="clients-item" style="margin-right: 100px;">
-              <a href="#">
+              <a href="https://www.natwest.com/">
                 <img src="./assets/images/natwest.png" style="width: 300px" alt="client logo">
               </a>
             </li>
@@ -488,8 +488,8 @@
             </li> -->
 
             <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/vidrona.png" style="width: 90px" alt="client logo">
+              <a href="https://www.linkedin.com/company/vidrona-ltd/?originalSubdomain=uk">
+                <img src="./assets/images/vidrona.png" style="width: 100px;margin-top: 10px;" alt="client logo">
               </a>
             </li>
 
@@ -607,27 +607,30 @@
                 enhanced accessibility, significantly improving UI/UX and boosting user engagement.
               </p>
               <p class="timeline-text">
+                • Utilized Redis for caching SQL query results, and implemented RabbitMQ for message queuing. This
+                efficient
+                distribution of data processing led to a 40% reduction in response times under high loads.
+              </p>
+              <p class="timeline-text">
                 • Spearheaded the engineering of multi-channel chat support solution for 3 banking platforms, boosting
                 user
-                satisfaction by 40% and reducing manual chat closures by 25% through automated processes
+                satisfaction by 40% and reducing manual chat closures by 25% through automated processes.
               </p>
               <p class="timeline-text">
-                • Developed a React component toolkit with over 30 customizable options, facilitating the product owners
-                and
-                developers to autonomously create diverse projects, reducing developer involvement and time by 90%
-              </p>
-              <p class="timeline-text">
-                • Swiftly resolved Redis standby mode during high traffic by implementing rate limiting for Rest API
-                calls using the leaky bucket algorithm, ensuring CPU consumption remained below 70% and enhancing system
-                stability.
+                • Swiftly resolved Redis standby mode during high traffic by implementing rate limiting for API calls
+                using the
+                leaky bucket algorithm, ensuring CPU consumption remained below 70% and enhancing system stability.
               </p>
               <p class="timeline-text">
                 • Built a scaffolding CLI that automates the generation of 200+ daily test packs summary for the web
-                services into
-                a daily test results dashboard, saving over 4 hours per day for testing team.
+                services
+                into a daily test results dashboard, saving over 4 hours per day for testing team.
               </p>
-
-
+              <p class="timeline-text">
+                • Streamlined deployment by automating with Terraform, GitLab, leveraging Docker for containerization,
+                stream-
+                lining deployment time by 50%, and ensuring consistent environment setup across all CI/CD stages
+              </p>
               <p class="timeline-text">
                 • Mentored 3 Software interns on React and documented best practices within the organization.
               </p>
@@ -641,15 +644,16 @@
               <span>September 2021 - March 2022</span>
 
               <p class="timeline-text">
-                • Developed an intuitive dashboard using ReactJS to provide insights for assets system condition and improved state management efficiency of 30% by integrating Redux , Context API and the react-query caching.
+                • Developed an intuitive dashboard using ReactJS to provide insights for assets system condition and
+                improved state management efficiency of 30% by integrating Redux and the react-query caching.
               </p>
               <p class="timeline-text">
-                • Implemented a real-time alert system using Firebase Cloud Messaging to notify operators of abnormalities, enhancing response time and operational efficiency by 40%.
+                • Implemented a real-time alert system using Firebase Cloud Messaging to notify operators of
+                abnormalities, enhancing response time and operational efficiency by 40%.
               </p>
-
-
               <p class="timeline-text">
-                • Engineered a secure messaging widget using Socket.io, Node.js, and JWT authentication, facilitating seamless interaction between field operatives and executives, enhancing communication efficiency by 50%
+                • Engineered a secure messaging widget using Socket.io, Node.js, and JWT authentication, facilitating
+                seamless interaction between field operatives and executives, enhancing communication efficiency by 50%.
               </p>
 
             </li>
@@ -749,21 +753,21 @@
         <header>
           <h2 class="h2 article-title">Projects</h2>
         </header>
-        <p class="h4"> Hold tight I am organising the projects :) </p>
-        
+        <!-- <p class="h4"> Hold tight I am organising the projects :) </p> -->
+
         <section class="projects">
 
-          
 
-          <!-- <ul class="filter-list">
+
+          <ul class="filter-list">
 
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
             </li>
 
-            <li class="filter-item">
+            <!-- <li class="filter-item">
               <button data-filter-btn>Web design</button>
-            </li>
+            </li> -->
 
             <li class="filter-item">
               <button data-filter-btn>Applications</button>
@@ -773,9 +777,9 @@
               <button data-filter-btn>Web development</button>
             </li>
 
-          </ul> -->
+          </ul>
 
-          <!-- <div class="filter-select-box">
+          <div class="filter-select-box">
 
             <button class="filter-select" data-select>
 
@@ -793,9 +797,9 @@
                 <button data-select-item>All</button>
               </li>
 
-              <li class="select-item">
+              <!-- <li class="select-item">
                 <button data-select-item>Web design</button>
-              </li>
+              </li> -->
 
               <li class="select-item">
                 <button data-select-item>Applications</button>
@@ -807,12 +811,12 @@
 
             </ul>
 
-          </div> -->
+          </div>
 
-          <!-- <ul class="project-list">
+          <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a href="https://github.com/Ganeshmohank/LoanRepayment-APP">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -824,48 +828,67 @@
 
                 <h3 class="project-title">Finance</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Visualise and plan EMIs</p>
 
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a href="https://github.com/Ganeshmohank/IChat">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/chatapp.jpg" alt="orizon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">IChat - WhatsApp Copy</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category"> RT Chat & Voice Platform</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/Ganeshmohank/ecommerce">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/ecom.jpg" alt="fundo" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">Prodo</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Online platform for perfumes</p>
 
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/Ganeshmohank/ecommerce">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/loading.gif" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Loading...</h3>
+
+                <p class="project-category">Loading...</p>
+
+              </a>
+            </li>
+
+
+            <!-- <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
 
                 <figure class="project-img">
@@ -971,9 +994,9 @@
                 <p class="project-category">Web development</p>
 
               </a>
-            </li>
+            </li> -->
 
-          </ul> -->
+          </ul>
 
         </section>
 
@@ -987,7 +1010,7 @@
         - #BLOG
       -->
 
-      <!-- <article class="blog" data-page="blog">
+      <article class="blog" data-page="blog">
 
         <header>
           <h2 class="h2 article-title">Blog</h2>
@@ -1169,7 +1192,7 @@
 
         </section>
 
-      </article> -->
+      </article>
 
 
 
@@ -1190,7 +1213,9 @@
             <!-- <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
               width="400" height="300" loading="lazy"></iframe> -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6344.545176506403!2d-121.8951596!3d37.3360548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcca22f6e550b%3A0xa81d52b500622ece!2sCenterra!5e0!3m2!1sen!2sus!4v1724025391969!5m2!1sen!2sus" width="400" height="300" loading="lazy"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6344.545176506403!2d-121.8951596!3d37.3360548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcca22f6e550b%3A0xa81d52b500622ece!2sCenterra!5e0!3m2!1sen!2sus!4v1724025391969!5m2!1sen!2sus"
+              width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section>
 
