@@ -134,6 +134,11 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+//change case to case studies
+
+const cases = document.getElementById("cases");
+console.log(cases);
+
 
 
 // page navigation variables
