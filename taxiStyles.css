@@ -1,4 +1,4 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,13 +6,13 @@
 body{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-} */
+}
 
 
 .Home-Section {
   gap: 60px;
   position: relative;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -320,6 +320,7 @@ body{
 
 .t1 {
   text-align: center;
+  padding: 15px;
 }
 .t2 {
   margin-left: 30px;
@@ -365,13 +366,12 @@ body{
 }
 
 .grid-item {
-  overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .grid-item img {
-  width: 100%;
+  width: 180%;
   display: block;
   object-fit: cover;
 }
