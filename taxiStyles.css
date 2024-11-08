@@ -371,7 +371,7 @@ body{
 }
 
 .grid-item img {
-  width: 180%;
+  width: 140%;
   display: block;
   object-fit: cover;
 }
