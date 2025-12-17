@@ -26,8 +26,8 @@
   --border-light: #F0EDE8;
 
   /* Typography */
-  --font-display: 'Playfair Display', serif;
-  --font-body: 'DM Sans', sans-serif;
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* Sizing */
   --container-max: 1200px;
@@ -347,9 +347,9 @@ button {
 .title-main {
   font-family: var(--font-display);
   font-size: clamp(52px, 7vw, 80px);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.05;
-  letter-spacing: -2px;
+  letter-spacing: -3px;
   color: var(--text-primary);
   display: block;
   animation: slideUp 0.8s var(--ease-out-expo) 0.3s backwards;
@@ -575,7 +575,7 @@ section {
   font-family: var(--font-display);
   font-size: clamp(32px, 4vw, 44px);
   font-weight: 600;
-  letter-spacing: -1px;
+  letter-spacing: -1.5px;
   color: var(--text-primary);
 }
 
@@ -782,6 +782,7 @@ section {
   font-family: var(--font-display);
   font-size: 26px;
   font-weight: 600;
+  letter-spacing: -0.5px;
   color: var(--text-primary);
   margin-bottom: 4px;
 }
@@ -930,6 +931,7 @@ section {
   font-family: var(--font-display);
   font-size: 24px;
   font-weight: 600;
+  letter-spacing: -0.5px;
   color: var(--text-primary);
   margin-bottom: 12px;
 }
@@ -1025,6 +1027,7 @@ section {
   font-family: var(--font-display);
   font-size: clamp(32px, 4vw, 44px);
   font-weight: 600;
+  letter-spacing: -1.5px;
   color: var(--text-primary);
   margin-bottom: 16px;
 }
