@@ -5,1278 +5,483 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Venkat's portofolio</title>
+  <title>Srivenkat Godithi | Software Engineer</title>
 
-  <!--
-    - favicon
-  -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
+  <!-- Google Fonts - Cabinet Grotesk + Satoshi -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!-- Subtle Grid Pattern Overlay -->
+  <div class="grid-overlay"></div>
 
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/avatar-1.png" alt="Srivenkat Godithi" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Srivenkat Godithi">Srivenkat Godithi</h1>
-
-          <p class="title">Full Stack Developer</p>
+  <!-- Top Bar with Connect + Location -->
+  <header class="top-bar">
+    <div class="top-bar-content">
+      <div class="location-connect">
+        <div class="location">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span>San Jose, CA</span>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:godithi.srivenkat@sjsu.edu" class="contact-link">godithi.srivenkat@sjsu.edu</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+140821038745" class="contact-link">+1 (408)-210-3874</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Degree</p>
-
-              <time datetime="1982-06-23">Masters</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>San Jose, CA, USA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/srivenkatgodithi/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/VenkatGGG/" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://leetcode.com/u/VenkatG99/" class="social-link">
-              <ion-icon name="code-slash-outline"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
-          </li>
-
-          <li class="navbar-item">
-            <button  id="cases" class="navbar-link" data-nav-link>Case</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm Software Engineer and Developer from San Jose, America, pursuing my Master's degree in Computer Software
-            Engineering at San Jose State University.
-            I love simplifying complex problems and transforming them into clear, elegant, and intuitive solutions.
-          </p>
-
-          <p>
-            I’m passionate about tackling projects that push me to think critically and devise innovative solutions. I take pride in writing clean, efficient code and enhancing system performance, whether by optimizing existing infrastructures or building new solutions from the ground up. I thrive in environments where I can take full ownership of a project from start to finish, and I’m always eager to learn, grow, and expand my skills.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made for seamless user experience.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  Crafting websites as all rounder.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Software solutions</h4>
-
-                <p class="service-item-text">
-                  Solutions for your problem statement.
-                </p>
-              </div>
-
-            </li>
-
-            <!-- <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li> -->
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Suman Holani" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Suman Holani</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-
-As Venkat's manager, I was immediately impressed by his remarkable potential and professional qualities. From the moment he joined our team as a newcomer, he distinguished himself through an exceptional combination of technical prowess and interpersonal skills.
-
-Venkat's intellectual curiosity stood out early on. He demonstrated an impressive ability to rapidly comprehend complex concepts and was never hesitant to ask thoughtful, probing questions. His proactive communication style was particularly noteworthy, as he confidently engaged with team members across all organizational levels.
-
-His technical capabilities truly shone through a standout project where he independently developed a Machine Learning data platform. What made this achievement remarkable was not just the technical complexity, but the speed and precision with which he executed it. When presenting his work to senior leadership, Venkat's confident delivery and the quality of his solution earned significant acclaim.
-
-Beyond his technical excellence, Venkat proved to be an exceptional team member. He was instrumental in creating a positive team dynamic, actively participating in and even organizing team events. His capacity to build strong, collaborative relationships was a genuine asset to our team's culture.
-
-
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Koshal Kabrar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Koshal Kobra</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I’ve had the pleasure of working with Venkat on multiple projects at Amazon, and he is an exceptional engineer. Venkat is energetic, highly skilled, and brings both technical expertise and a positive attitude to every challenge. His ability to quickly understand complex systems and collaborate across teams makes him an invaluable asset.
-
-Venkat consistently demonstrates strong ownership, delivering high-quality results and inspiring those around him. His clear communication, problem-solving skills, and calmness under pressure set him apart. He’s a true team player and a standout contributor.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <!-- <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li> -->
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <a href="https://www.linkedin.com/in/suman-holani-37630a20/" class="h3 modal-title" data-modal-title>Daniel lewis</a>
-
-              <time datetime="2021-06-14">15 March, 2023</time>
-
-              <div data-modal-text>
-                <p>
-                  I’ve had the pleasure of working with Venkat on multiple projects at Amazon, and he is an exceptional engineer. Venkat is energetic, highly skilled, and brings both technical expertise and a positive attitude to every challenge. His ability to quickly understand complex systems and collaborate across teams makes him an invaluable asset.
-
-Venkat consistently demonstrates strong ownership, delivering high-quality results and inspiring those around him. His clear communication, problem-solving skills, and calmness under pressure set him apart. He’s a true team player and a standout contributor.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
+        <div class="connect-links">
+          <a href="https://www.linkedin.com/in/srivenkatgodithi/" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/VenkatGGG/" target="_blank" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://leetcode.com/u/VenkatG99/" target="_blank" aria-label="LeetCode">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+            </svg>
+          </a>
+          <a href="mailto:godithi.srivenkat@sjsu.edu" class="email-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
         </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Experience</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item" style="margin-right: 100px;">
-              <a href="https://www.amazon.com/">
-                <img src="./assets/images/amazon.png" style="width: 300px;height:70px;" alt="client logo">
-              </a>
-            </li>
-
-            <!-- <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li> -->
-
-            <li class="clients-item">
-              <a href="https://www.samsung.com">
-                <img src="./assets/images/samsung.png" style="width: 300px;height:70px;" alt="client logo">
-              </a>
-            </li>
-
-            <!-- <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li> -->
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">San Jose State University</h4>
-
-              <span>2024 — 2026</span>
-
-              <p class="timeline-text">
-                Masters in computer software engineering specilization in distributed systems
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Sardar Vallabhbhai National Institute of Technology, NIT Surat</h4>
-
-              <span>2018 — 2022</span>
-
-              <p class="timeline-text">
-                Bachelors in Electronics and Communication engineering
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Sasi Juniuor College</h4>
-
-              <span>2016 — 2018</span>
-
-              <p class="timeline-text">
-                Mathematics, Physics and Chemistry
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Rubrik | Software Engineer Intern</h4>
-
-              <span>June 2022 - July 2022</span>
-
-              <p class="timeline-text">
-              Incoming Summer Software Engineering Intern
-          
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Amazon | Software Development Engineer</h4>
-
-              <span>August, 2022 — March, 2023</span>
-
-              <p class="timeline-text">
-               Built an MLOps platform that integrates data from multiple sources and supports ML notebooks with code ver-
-sioning, CI/CD pipelines, and one-click deployment and model metrics dashboard to track performance and
-insights, reducing ML model development time by 5x and increasing model accuracy consistency by 30%.
-              <p class="timeline-text">
-               Automated the blocking and reinstatement of 40K global sellers daily based on tax compliance using AWS Lambda,
-SQS, and Step Functions, reducing processing time by 6X.
-              </p>
-              <p class="timeline-text">
-              Utilized Redis for caching SQL query results, and implemented RabbitMQ for message queuing. This efficient
-distribution of data processing led to a 40% reduction in response times under high loads.
-              </p>
-              <p class="timeline-text">
-               Reduced API latency by implementing a CDN for static content delivery, cutting page load times by 40%. Leveraged
-edge caching and geo-distribution to improve global performance.
-              <p class="timeline-text">
-             Swiftly resolved Redis standby mode during high traffic by implementing rate limiting for API calls using the
-leaky bucket algorithm, ensuring CPU consumption remained below 70% and enhancing system stability.
-              </p>
-              
-
-              <p class="timeline-text">
-                Engineered and optimized the in-house chatbot’s codebase in React, incorporating 10+ features, including enhanced
-accessibility,and translation support, significantly improving UI/UX and boosting user engagement.
-              </p>
-              <p class="timeline-text">
-                Led the development of an interactive reporting feature using React and Chart.js, enabling users to generate cus-
-tomizable sales reports with real-time data. Optimized front-end performance, reducing load time by 70% through
-efficient state management and data visualization techniques.
-              </p>
-              <p class="timeline-text">
-                 Mentored 3 Software interns on React and documented best practices within the organization.
-              </p>
-
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Samsung | Software Engineer</h4>
-
-              <span>June 2022 - July 2022</span>
-
-              <p class="timeline-text">
-                Developed an intuitive watch data dashboard using React.js and enhanced state management efficiency by 30% through
-                the integration of Redux for global state management and react-query for efficient data caching
-              <p class="timeline-text">
-                Optimized performance with lazy loading and React Virtualized, rendering only visible data and fetching additional content on-demand. This reduced load times, minimized memory usage, and improved scalability, enhancing responsiveness for large datasets
-              </p>
-             
-
-            </li>
-
-            <!-- <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li> -->
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web Development</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Competetive coding</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Management</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">UI UX</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Devops</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="projects">
-
-        <header>
-          <h2 class="h2 article-title">Projects</h2>
-        </header>
-        <!-- <p class="h4"> Hold tight I am organising the projects :) </p> -->
-
-        <section class="projects">
-
-
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <!-- <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li> -->
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <!-- <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li> -->
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/Ganeshmohank/LoanRepayment-APP">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Visualise and plan EMIs</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/Ganeshmohank/IChat">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/chatapp.jpg" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">IChat - WhatsApp Copy</h3>
-
-                <p class="project-category"> RT Chat & Voice Platform</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/Ganeshmohank/ecommerce">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/ecom.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Prodo</h3>
-
-                <p class="project-category">Online platform for perfumes</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/Ganeshmohank/EmployeeManagementSystemWithAngularAndSpringBoot">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/employee_management.webp" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Employee Management</h3>
-
-                <p class="project-category">Manage your work force</p>
-
-              </a>
-            </li>
-
-
-            <!-- <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li> -->
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="case">
-
-        <header>
-          <h2 class="h2">Case Study </h2> <h2 class="h2 article-title">& Design Ideas</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <!-- <li class="blog-post-item">
-              <a href="./casestudy1.html">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li> -->
-
-            <!-- <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li> -->
-
-            <li class="blog-post-item">
-              <a href="https://www.figma.com/design/YYYy4e83nstiGOzktwGuR2/My-Designs?node-id=0-1&node-type=canvas&t=67uwKagcswKm7Qen-0">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/Intelli Analytics - Line - Tower.png" alt="Vns" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Jan 6, 2021</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design VNS</h3>
-
-                  <p class="blog-text">
-                    To design an energy asset management application that monitors and maintains powerlines and transmission energy.
-                  </p>
-
-                </div>
-
-              </a>
-            </li> 
-
-            <li class="blog-post-item">
-              <a href="./casestudy1.html">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="Case Study for Taxi" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Feb 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Case Study for Taxis</h3>
-
-                  <p class="blog-text">
-                    How might we create an all-in-one taxi & delivery app that offers a commission-free model
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://www.figma.com/design/YYYy4e83nstiGOzktwGuR2/My-Designs?node-id=18-6121&node-type=canvas&t=67uwKagcswKm7Qen-0">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Nov 18, 2023</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Clones</h3>
-
-                  <p class="blog-text">
-                    Youtube and Apple websites Clone
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://www.figma.com/design/YYYy4e83nstiGOzktwGuR2/My-Designs?node-id=1-13732&node-type=canvas&t=67uwKagcswKm7Qen-0">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/Contact Info.png" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Oct 12, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Chat App</h3>
-
-                  <p class="blog-text">
-                    Design plan for chat platform
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <!-- <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe> -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.309222088383!2d-121.88364642399908!3d37.33518737209947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fccb864de43d5%3A0x397ffe721937340e!2sSJSU!5e0!3m2!1sen!2sus!4v1733418231618!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-      <article class="contact" data-page="Case-Study">
-
-        <header>
-          <h2 class="h2 article-title">Case-Study</h2>
-        </header>
-
-      </article>
-
+      </div>
+      <a href="#contact" class="top-cta">Let's Talk</a>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="#" class="nav-logo">Srivenkat<span class="accent">.</span></a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        <span>Open to opportunities</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-main">Software Engineer</span>
+      </h1>
+      <p class="hero-role">Graduate Student at San Jose State University</p>
+      <p class="hero-subtitle">
+        Hey, I'm <span class="highlight">Sri</span> — I build things that live on the internet.
+        Currently diving deep into distributed systems and machine learning, finding joy in making complex problems feel simple.
+      </p>
+      <div class="hero-ctas">
+        <a href="#experience" class="btn btn-primary">
+          <span>View My Work</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
     </div>
 
-  </main>
+    <!-- Company Logos Grid -->
+    <div class="hero-grid">
+      <a href="#experience" class="grid-card" data-delay="0">
+        <div class="company-logo rubrik">
+          <img src="./assets/images/companies/rubrik.png" alt="Rubrik">
+        </div>
+        <span class="grid-label">Rubrik</span>
+      </a>
+      <a href="#experience" class="grid-card" data-delay="1">
+        <div class="company-logo amazon">
+          <img src="./assets/images/companies/amazon.png" alt="Amazon">
+        </div>
+        <span class="grid-label">Amazon</span>
+      </a>
+      <a href="#experience" class="grid-card" data-delay="2">
+        <div class="company-logo samsung">
+          <img src="./assets/images/companies/samsung.png" alt="Samsung">
+        </div>
+        <span class="grid-label">Samsung</span>
+      </a>
+      <a href="#projects" class="grid-card projects-card" data-delay="3">
+        <span class="projects-number">10+</span>
+        <span class="grid-label">Projects Built</span>
+      </a>
+    </div>
+  </section>
 
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
 
+    <div class="about-content">
+      <div class="about-text">
+        <p class="about-lead">
+          I'm endlessly curious about how software shapes our world. There's something deeply satisfying about
+          taking a messy, complicated problem and crafting it into something that just <em>works</em> — clean,
+          intuitive, maybe even a little elegant.
+        </p>
+        <p>
+          Right now, I'm pursuing my Master's in Software Engineering at San Jose State, where I've been
+          geeking out over distributed systems. Before that, I spent time at Amazon and Samsung building
+          tools that real people actually use every day.
+        </p>
+        <p>
+          I care a lot about writing code that future-me (or anyone else) won't curse at. I like owning
+          projects end-to-end — from that first "hmm, what if..." to shipping something I'm proud of.
+        </p>
+      </div>
 
+      <div class="about-details">
+        <div class="detail-card">
+          <h4>Education</h4>
+          <div class="edu-item">
+            <span class="edu-degree">M.S. Software Engineering</span>
+            <span class="edu-info">San Jose State University • GPA 3.8</span>
+            <span class="edu-year">2024 - 2026</span>
+          </div>
+        </div>
 
+        <div class="detail-card">
+          <h4>Tech I Work With</h4>
+          <div class="tech-cloud">
+            <span>Java</span>
+            <span>Go</span>
+            <span>Python</span>
+            <span>React</span>
+            <span>AWS</span>
+            <span>Kafka</span>
+            <span>Redis</span>
+            <span>Kubernetes</span>
+            <span>PostgreSQL</span>
+            <span>Spring Boot</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>Scikit-learn</span>
+            <span>TensorFlow</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Experience Section -->
+  <section class="experience" id="experience">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h2 class="section-title">Experience</h2>
+    </div>
 
-  <!--
-    - custom js link
-  -->
+    <!-- Audience Toggle -->
+    <div class="audience-toggle">
+      <button class="toggle-btn active" data-view="recruiter">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+        <span>For Recruiters</span>
+      </button>
+      <button class="toggle-btn" data-view="technical">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+          <polyline points="16 18 22 12 16 6"/>
+          <polyline points="8 6 2 12 8 18"/>
+        </svg>
+        <span>For Engineers</span>
+      </button>
+    </div>
+
+    <!-- Recruiter View -->
+    <div class="experience-view active" data-experience="recruiter">
+      <div class="exp-card" data-reveal>
+        <div class="exp-header">
+          <div class="exp-company">
+            <h3>Rubrik</h3>
+            <span class="exp-role">Software Engineering Intern</span>
+          </div>
+          <span class="exp-date">June 2025 — August 2025</span>
+        </div>
+        <div class="exp-content">
+          <ul class="exp-highlights">
+            <li>Built an <span class="metric">AI-powered debugging tool</span> for system administrators that reduced troubleshooting time by <span class="metric">4x</span></li>
+            <li>Created a diagnostic system cutting manual work by <span class="metric">70%</span></li>
+            <li>Designed auto-scaling infrastructure eliminating idle compute costs</li>
+            <li>Processed <span class="metric">10TB</span> of daily telemetry data through high-throughput systems</li>
+            <li>Reduced query response times by <span class="metric">200ms</span> for complex data retrieval</li>
+            <li>Built real-time dashboards for monitoring cluster health across regions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-card" data-reveal>
+        <div class="exp-header">
+          <div class="exp-company">
+            <h3>Amazon</h3>
+            <span class="exp-role">Software Engineer</span>
+          </div>
+          <span class="exp-date">Aug 2022 — Mar 2023</span>
+        </div>
+        <div class="exp-content">
+          <ul class="exp-highlights">
+            <li>Built MLOps platform reducing model deployment from <span class="metric">1 week to 2 days</span></li>
+            <li>Decreased API response times by <span class="metric">40%</span> handling <span class="metric">50K requests/sec</span></li>
+            <li>Automated compliance system processing <span class="metric">40K+</span> daily verifications <span class="metric">6X faster</span></li>
+            <li>Stabilized system performance during high-traffic events, preventing cascading failures</li>
+            <li>Developed seller feedback dashboard with real-time sentiment analysis</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-card" data-reveal>
+        <div class="exp-header">
+          <div class="exp-company">
+            <h3>Samsung</h3>
+            <span class="exp-role">Software Engineer</span>
+          </div>
+          <span class="exp-date">Jun — Jul 2022</span>
+        </div>
+        <div class="exp-content">
+          <ul class="exp-highlights">
+            <li>Built real-time sensor processing achieving <span class="metric">95% accuracy</span> for activity recognition</li>
+            <li>Reduced frontend complexity by <span class="metric">30%</span> with optimized data architecture</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical View -->
+    <div class="experience-view" data-experience="technical">
+      <div class="exp-card" data-reveal>
+        <div class="exp-header">
+          <div class="exp-company">
+            <h3>Rubrik</h3>
+            <span class="exp-role">Software Engineering Intern</span>
+          </div>
+          <span class="exp-date">June 2025 — August 2025</span>
+        </div>
+        <div class="exp-content">
+          <ul class="exp-highlights">
+            <li>Built <strong>LLM-RAG</strong> debugging tool using <strong>MongoDB</strong> CDC streams, fine-tuned <strong>Llama 2</strong> for improved answer relevancy</li>
+            <li>Architected <strong>AI-agents system</strong> with <strong>gRPC A2A</strong> bus and <strong>MCP</strong> server for federated GQL schema introspection</li>
+            <li>Designed 3-layer autoscaling on <strong>Kubernetes</strong> using <strong>KEDA</strong> + <strong>VPA</strong> with <strong>Karpenter</strong>/<strong>GKE Autoscaler</strong></li>
+            <li>Built high-throughput ingestion: <strong>Golang</strong> microservices → <strong>Java Spring Boot</strong> API → <strong>Apache Kafka</strong> pipeline</li>
+            <li>Implemented multi-tier query federation with <strong>Elasticsearch</strong> + <strong>PostgreSQL</strong>, predicate pushdown, and <strong>bloom filters</strong></li>
+            <li>Built geospatial dashboard with <strong>React</strong>, <strong>react-leaflet</strong>, <strong>Redux</strong> for real-time cluster health</li>
+            <li>Refactored <strong>React</strong> checkout flow with centralized <strong>Redux</strong> store, eliminating 80% of race conditions</li>
+            <li>Built <strong>D3.js</strong> dashboard with <strong>lazy loading</strong> + virtualized paging for 100K data points at <strong>60 FPS</strong></li>
+          </ul>
+          <div class="tech-tags">
+            <span>Go</span>
+            <span>Java</span>
+            <span>Kafka</span>
+            <span>Kubernetes</span>
+            <span>KEDA</span>
+            <span>MongoDB</span>
+            <span>Elasticsearch</span>
+            <span>React</span>
+            <span>Redux</span>
+            <span>D3.js</span>
+            <span>gRPC</span>
+            <span>LLM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-card" data-reveal>
+        <div class="exp-header">
+          <div class="exp-company">
+            <h3>Amazon</h3>
+            <span class="exp-role">Software Engineer</span>
+          </div>
+          <span class="exp-date">Aug 2022 — Mar 2023</span>
+        </div>
+        <div class="exp-content">
+          <ul class="exp-highlights">
+            <li>Architected serverless <strong>MLOps platform</strong> with AWS <strong>Step Functions</strong> + <strong>Lambda</strong> for automated ML lifecycle</li>
+            <li>Integrated <strong>Amazon SQS/SNS</strong> + <strong>Redis</strong> distributed caching, achieving P95 latency reduction of 40%</li>
+            <li>Built event-driven compliance system using <strong>AWS SQS</strong> + <strong>Step Functions</strong> with idempotent processing</li>
+            <li>Implemented distributed <strong>token bucket rate-limiting</strong> to resolve Redis hot-key bottleneck</li>
+            <li>Developed <strong>React/Redux</strong> frontend with real-time <strong>AWS Comprehend</strong> sentiment analysis via EventBridge</li>
+          </ul>
+          <div class="tech-tags">
+            <span>AWS Lambda</span>
+            <span>Step Functions</span>
+            <span>SQS/SNS</span>
+            <span>Redis</span>
+            <span>React</span>
+            <span>Redux</span>
+            <span>MLOps</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-card" data-reveal>
+        <div class="exp-header">
+          <div class="exp-company">
+            <h3>Samsung</h3>
+            <span class="exp-role">Software Engineer</span>
+          </div>
+          <span class="exp-date">Jun — Jul 2022</span>
+        </div>
+        <div class="exp-content">
+          <ul class="exp-highlights">
+            <li>Implemented real-time sensor stream processing with <strong>Apache Kafka</strong> + <strong>KStream</strong> for time-series classification</li>
+            <li>Designed <strong>GraphQL</strong> API aggregation layer with <strong>Redux</strong> + <strong>React-Query</strong> optimization</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Kafka</span>
+            <span>KStream</span>
+            <span>GraphQL</span>
+            <span>React</span>
+            <span>Redux</span>
+            <span>React-Query</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h2 class="section-title">Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+      <a href="https://github.com/VenkatGGG/Cipher" class="project-card featured" data-reveal target="_blank">
+        <div class="project-content">
+          <span class="project-label">Featured Project</span>
+          <h3>Cipher</h3>
+          <p>AI-powered real-time search engine with RAG architecture. Uses MongoDB Atlas Vector Search for semantic context and async summarization for generative synthesis.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>React</span>
+            <span>Redux</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+        <div class="project-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+          </svg>
+        </div>
+      </a>
+
+      <a href="https://github.com/VenkatGGG/LiveWatch" class="project-card" data-reveal target="_blank">
+        <div class="project-content">
+          <h3>LiveWatch</h3>
+          <p>Real-time monitoring platform with WebSockets, D3.js visualizations, and anomaly detection. Integrated with Google Cloud Pub/Sub.</p>
+          <div class="project-tech">
+            <span>PostgreSQL</span>
+            <span>Express</span>
+            <span>React</span>
+            <span>D3.js</span>
+          </div>
+        </div>
+        <div class="project-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+          </svg>
+        </div>
+      </a>
+
+      <a href="https://github.com/VenkatGGG/ShapeWeaver" class="project-card" data-reveal target="_blank">
+        <div class="project-content">
+          <h3>ShapeWeaver</h3>
+          <p>Content-based image retrieval with CNN classifier achieving 93% accuracy. Uses TensorFlow, Keras, and VGG16 for similarity search.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>Keras</span>
+            <span>Flask</span>
+          </div>
+        </div>
+        <div class="project-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+          </svg>
+        </div>
+      </a>
+
+      <a href="https://github.com/VenkatGGG/SoundSphere" class="project-card" data-reveal target="_blank">
+        <div class="project-content">
+          <h3>SoundSphere</h3>
+          <p>Healthcare appointment platform with React.js, Material-UI, Spring Boot. OAuth authentication and Google Calendar API integration.</p>
+          <div class="project-tech">
+            <span>Spring Boot</span>
+            <span>React</span>
+            <span>OAuth</span>
+            <span>GCP</span>
+          </div>
+        </div>
+        <div class="project-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+          </svg>
+        </div>
+      </a>
+    </div>
+
+    <div class="projects-cta">
+      <a href="https://github.com/VenkatGGG/" class="btn btn-outline" target="_blank">
+        View All on GitHub
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 17L17 7M17 7H7M17 7V17"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-content">
+      <div class="contact-header">
+        <span class="section-number">04</span>
+        <h2>Let's Build Something Together</h2>
+        <p>I'm always excited to connect with people who share a passion for building great software. Whether you have an opportunity, a project idea, or just want to chat — drop me a line.</p>
+      </div>
+
+      <div class="contact-actions">
+        <a href="mailto:godithi.srivenkat@sjsu.edu" class="contact-email">
+          godithi.srivenkat@sjsu.edu
+        </a>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/srivenkatgodithi/" target="_blank" class="contact-link">LinkedIn</a>
+          <a href="https://github.com/VenkatGGG/" target="_blank" class="contact-link">GitHub</a>
+          <a href="tel:+14082103874" class="contact-link">+1 (408) 210-3874</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <span class="footer-text">Designed & Built by Srivenkat Godithi</span>
+      <span class="footer-year">2025</span>
+    </div>
+  </footer>
+
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
