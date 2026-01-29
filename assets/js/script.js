@@ -1,9 +1,41 @@
 'use strict';
 
 /*===================================*\
-  WARM EDITORIAL PORTFOLIO
+  PORTFOLIO WITH THEME TOGGLE
   JavaScript Interactions
 \*===================================*/
+
+// ================================
+// THEME TOGGLE
+// ================================
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+// Check for saved theme preference or default to dark
+const savedTheme = localStorage.getItem('theme') || 'dark';
+body.setAttribute('data-theme', savedTheme);
+
+// Toggle theme on button click
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = body.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    body.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    
+    // Update nav highlight color based on theme
+    updateNavHighlightColor(newTheme);
+  });
+}
+
+// Function to update nav highlight color
+function updateNavHighlightColor(theme) {
+  const activeNavLinks = document.querySelectorAll('.nav-link.active');
+  activeNavLinks.forEach(link => {
+    link.style.color = '#2dd4bf'; // Teal accent color works for both themes
+  });
+}
 
 // ================================
 // SCROLL REVEAL ANIMATIONS
@@ -98,11 +130,13 @@ let lastScrollY = 0;
 
 const handleNavScroll = () => {
   const currentScrollY = window.scrollY;
+  const isDark = document.body.getAttribute('data-theme') === 'dark';
 
-  // Add shadow on scroll
+  // Add shadow on scroll (stronger shadow for dark theme)
   if (currentScrollY > 10) {
-    nav.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.05)';
-    topBar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.03)';
+    const shadowOpacity = isDark ? 0.2 : 0.05;
+    nav.style.boxShadow = `0 4px 20px rgba(0, 0, 0, ${shadowOpacity})`;
+    topBar.style.boxShadow = `0 2px 10px rgba(0, 0, 0, ${shadowOpacity * 0.6})`;
   } else {
     nav.style.boxShadow = 'none';
     topBar.style.boxShadow = 'none';
@@ -227,7 +261,7 @@ const highlightNavOnScroll = () => {
     if (navLink) {
       if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
         navLink.classList.add('active');
-        navLink.style.color = '#FF6B35';
+        navLink.style.color = '#2dd4bf'; // Teal accent
       } else {
         navLink.classList.remove('active');
         navLink.style.color = '';

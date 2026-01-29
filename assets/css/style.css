@@ -1,13 +1,34 @@
 /*===================================*\
-  DARK PORTFOLIO THEME
-  Elegant dark theme with teal accents
+  PORTFOLIO WITH LIGHT/DARK THEME
+  Toggle between elegant themes
 \*===================================*/
 
 /* ================================
    CSS VARIABLES
    ================================ */
 :root {
-  /* Colors - Dark theme */
+  /* Typography */
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Sizing */
+  --container-max: 1200px;
+  --section-padding: clamp(40px, 5vw, 60px);
+  --card-radius: 16px;
+  --card-radius-sm: 10px;
+
+  /* Transitions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --transition-fast: 0.2s var(--ease-out-quart);
+  --transition-medium: 0.4s var(--ease-out-expo);
+  --transition-slow: 0.8s var(--ease-out-expo);
+}
+
+/* ================================
+   DARK THEME (Default)
+   ================================ */
+[data-theme="dark"] {
   --bg-primary: #0f1419;
   --bg-secondary: #151c24;
   --bg-card: #1a232d;
@@ -25,22 +46,41 @@
   --border-color: #2a3642;
   --border-light: #1e2832;
 
-  /* Typography */
-  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --shadow-accent: rgba(45, 212, 191, 0.3);
+  --nav-bg: rgba(15, 20, 25, 0.9);
+  --topbar-bg: rgba(15, 20, 25, 0.95);
+  --grid-line: rgba(255, 255, 255, 0.03);
+  --logo-filter: brightness(0) invert(1);
+}
 
-  /* Sizing */
-  --container-max: 1200px;
-  --section-padding: clamp(40px, 5vw, 60px);
-  --card-radius: 16px;
-  --card-radius-sm: 10px;
+/* ================================
+   LIGHT THEME
+   ================================ */
+[data-theme="light"] {
+  --bg-primary: #FAFAF8;
+  --bg-secondary: #F5F3EF;
+  --bg-card: #FFFFFF;
+  --bg-accent: #FFF8F5;
 
-  /* Transitions */
-  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
-  --transition-fast: 0.2s var(--ease-out-quart);
-  --transition-medium: 0.4s var(--ease-out-expo);
-  --transition-slow: 0.8s var(--ease-out-expo);
+  --accent-primary: #2dd4bf;
+  --accent-secondary: #5eead4;
+  --accent-light: rgba(45, 212, 191, 0.1);
+  --accent-dark: #14b8a6;
+
+  --text-primary: #1A1A1A;
+  --text-secondary: #5A5A5A;
+  --text-muted: #8A8A8A;
+
+  --border-color: #E8E6E1;
+  --border-light: #F0EDE8;
+
+  --shadow-color: rgba(0, 0, 0, 0.08);
+  --shadow-accent: rgba(45, 212, 191, 0.25);
+  --nav-bg: rgba(250, 250, 248, 0.9);
+  --topbar-bg: rgba(255, 255, 255, 0.95);
+  --grid-line: rgba(0, 0, 0, 0.02);
+  --logo-filter: none;
 }
 
 /* ================================
@@ -66,6 +106,7 @@ body {
   background: var(--bg-primary);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  transition: background var(--transition-medium), color var(--transition-medium);
 }
 
 ::-webkit-scrollbar {
@@ -119,11 +160,12 @@ button {
   height: 100%;
   pointer-events: none;
   z-index: -1;
-  opacity: 0.15;
+  opacity: 0.4;
   background-image:
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
   background-size: 60px 60px;
+  transition: opacity var(--transition-medium);
 }
 
 /* ================================
@@ -136,9 +178,10 @@ button {
   right: 0;
   z-index: 1001;
   padding: 12px 40px;
-  background: rgba(15, 20, 25, 0.95);
+  background: var(--topbar-bg);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
+  transition: background var(--transition-medium), border-color var(--transition-medium);
 }
 
 .top-bar-content {
@@ -199,7 +242,80 @@ button {
 .top-cta:hover {
   background: var(--accent-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(45, 212, 191, 0.3);
+  box-shadow: 0 8px 24px var(--shadow-accent);
+}
+
+/* Theme Toggle Switch */
+.theme-toggle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-toggle {
+  position: relative;
+  width: 56px;
+  height: 28px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent-primary);
+}
+
+.theme-toggle-track {
+  position: absolute;
+  inset: 3px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+}
+
+.theme-toggle-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.theme-toggle-icon.sun {
+  color: var(--text-muted);
+}
+
+.theme-toggle-icon.moon {
+  color: var(--text-muted);
+}
+
+[data-theme="light"] .theme-toggle-icon.sun {
+  color: var(--accent-primary);
+}
+
+[data-theme="dark"] .theme-toggle-icon.moon {
+  color: var(--accent-primary);
+}
+
+.theme-toggle-thumb {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  left: 4px;
+  transition: transform var(--transition-fast), background var(--transition-fast);
+  box-shadow: 0 2px 8px var(--shadow-accent);
+}
+
+[data-theme="dark"] .theme-toggle-thumb {
+  transform: translateX(28px);
 }
 
 @media (max-width: 768px) {
@@ -215,6 +331,20 @@ button {
     padding: 8px 16px;
     font-size: 13px;
   }
+
+  .theme-toggle {
+    width: 48px;
+    height: 24px;
+  }
+
+  .theme-toggle-thumb {
+    width: 16px;
+    height: 16px;
+  }
+
+  [data-theme="dark"] .theme-toggle-thumb {
+    transform: translateX(24px);
+  }
 }
 
 /* ================================
@@ -227,9 +357,10 @@ button {
   right: 0;
   z-index: 1000;
   padding: 16px 40px;
-  background: rgba(15, 20, 25, 0.9);
+  background: var(--nav-bg);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-color);
+  transition: background var(--transition-medium), border-color var(--transition-medium);
 }
 
 .nav {
@@ -426,7 +557,7 @@ button {
 .btn-primary:hover {
   background: var(--accent-dark);
   transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(45, 212, 191, 0.35);
+  box-shadow: 0 12px 32px var(--shadow-accent);
 }
 
 .btn-secondary {
@@ -450,7 +581,7 @@ button {
   background: var(--accent-primary);
   color: var(--bg-primary);
   border-color: var(--accent-primary);
-  box-shadow: 0 8px 24px rgba(45, 212, 191, 0.3);
+  box-shadow: 0 8px 24px var(--shadow-accent);
 }
 
 /* Hero Grid - Company Logos */
@@ -472,7 +603,7 @@ button {
   justify-content: center;
   text-align: center;
   gap: 16px;
-  transition: all var(--transition-medium);
+  transition: all var(--transition-medium), background var(--transition-medium), border-color var(--transition-medium);
   animation: fadeInUp 0.6s var(--ease-out-expo) calc(0.6s + var(--delay, 0) * 0.1s) backwards;
 }
 
@@ -483,7 +614,7 @@ button {
 
 .grid-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 40px var(--shadow-color);
   border-color: var(--accent-primary);
 }
 
@@ -499,8 +630,8 @@ button {
   max-width: 120px;
   object-fit: contain;
   opacity: 0.9;
-  filter: brightness(0) invert(1);
-  transition: all var(--transition-fast);
+  filter: var(--logo-filter);
+  transition: all var(--transition-medium);
 }
 
 .grid-card:hover .company-logo img {
@@ -775,7 +906,7 @@ section {
 
 .exp-card:hover {
   border-color: var(--accent-primary);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 32px var(--shadow-color);
 }
 
 .exp-header {
@@ -915,7 +1046,7 @@ section {
 .project-card:hover {
   border-color: var(--accent-primary);
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 20px 40px var(--shadow-color);
 }
 
 .project-card.featured {
