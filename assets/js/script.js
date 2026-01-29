@@ -33,7 +33,7 @@ if (themeToggle) {
 function updateNavHighlightColor(theme) {
   const activeNavLinks = document.querySelectorAll('.nav-link.active');
   activeNavLinks.forEach(link => {
-    link.style.color = '#2dd4bf'; // Teal accent color works for both themes
+    link.style.color = '#FF6B35'; // Orange accent color
   });
 }
 
@@ -261,7 +261,7 @@ const highlightNavOnScroll = () => {
     if (navLink) {
       if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
         navLink.classList.add('active');
-        navLink.style.color = '#2dd4bf'; // Teal accent
+        navLink.style.color = '#FF6B35'; // Orange accent
       } else {
         navLink.classList.remove('active');
         navLink.style.color = '';
